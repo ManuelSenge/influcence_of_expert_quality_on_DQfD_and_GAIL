@@ -24,3 +24,6 @@ The first step here is to train a policy to generate training data. This can be 
 ![DQfD results trained on different qualities](plots/reward_histogram.png)
 
 After having trained the policies `GAIL/process_data.py` generated the datasets and analysed them. Subsequently, `GAIL/split_dataset.py` can be used to split the resulting data sets into disjunct sets. `GAIL/eval_callback.py` contains the evaluation callback during training. Finally, to train GAIL run `GAIL/train_gail.py`
+
+The results for GAIL with SAC as the generator are the following:
+![DQfD results trained on different qualities](plots/GAIL_results_two_seeds.png)
