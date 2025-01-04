@@ -1,0 +1,8 @@
+.vscode/
+GAIL_exp_metaworld/
+__pycache__
+GAIL/update_tags_to_config.py
+GAIL/models/
+DQfD/model/
+DQfD/data/
+models
