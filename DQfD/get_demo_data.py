@@ -106,7 +106,7 @@ if __name__ == '__main__':
         'bad_data_100_to_300':100,
         'random_no_train':-1}
     
-    exp_names = ['random_no_train'] # 'perfect_data_500', 'mixed_good_400_500', 'middle_300_400, 'bad_data_100_to_300', 'bad_data_under_100', 
+    exp_names = ['perfect_data_500', 'mixed_good_400_500', 'middle_300_400', 'bad_data_100_to_300', 'bad_data_under_100', 'random_no_train'] 
 
     env = gym.make(Config.ENV_NAME)
     for e in exp_names:
@@ -116,9 +116,9 @@ if __name__ == '__main__':
                     project="robotic_seminar",
                     group="get_demo_data",
                     entity="manuelsenge",
-                    sync_tensorboard=True,  # auto-upload sb3's tensorboard metrics
-                    monitor_gym=True,  # auto-upload the videos of agents playing the game
-                    save_code=True,  # optional
+                    sync_tensorboard=True,
+                    monitor_gym=True,
+                    save_code=True,
                 )
     
         path_data = f"/Users/manuelsenge/Documents/TUM/Semester 4/Robotic_Seminar/workspace/DQfD_new/DQfD/data/{e}"
